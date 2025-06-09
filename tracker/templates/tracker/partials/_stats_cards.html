@@ -1,0 +1,43 @@
+<!-- Statistics Cards -->
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card bg-primary text-white">
+            <div class="card-body">
+                <h5 class="card-title">Total Expenses</h5>
+                <h3>{{ total_expenses }}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-success text-white">
+            <div class="card-body">
+                <h5 class="card-title">Total Amount</h5>
+                <h3>Rp {{ total_amount|floatformat:2 }}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <h5 class="card-title">This Month</h5>
+                <h3>Rp {{ current_month_total|floatformat:2 }}</h3>
+                <small>{{ current_month_count }} expenses</small>
+                {% if month_change %}
+                    <div class="mt-2">
+                        <small class="{% if month_change > 0 %}text-danger{% else %}text-success{% endif %}">
+                            {{ month_change|floatformat:1 }}% vs last month
+                        </small>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-warning text-white">
+            <div class="card-body">
+                <h5 class="card-title">Average</h5>
+                <h3>Rp {{ avg_expense|floatformat:2 }}</h3>
+            </div>
+        </div>
+    </div>
+</div>

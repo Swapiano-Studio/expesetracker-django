@@ -1,0 +1,37 @@
+<!-- Charts -->
+<div class="card">
+    <div class="card-header">
+        <h5>Category Distribution</h5>
+    </div>
+    <div class="card-body">
+        <canvas id="categoryChart" width="300" height="150"></canvas>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+const categoryLabels = JSON.parse('{{ category_labels|escapejs }}');
+const categoryAmounts = JSON.parse('{{ category_amounts|escapejs }}');
+const categoryColors = JSON.parse('{{ category_colors|escapejs }}');
+
+document.addEventListener('DOMContentLoaded', function() {
+    const categoryCtx = document.getElementById('categoryChart').getContext('2d');
+    new Chart(categoryCtx, {
+        type: 'pie',
+        data: {
+            labels: categoryLabels,
+            datasets: [{
+                data: categoryAmounts,
+                backgroundColor: categoryColors
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        }
+    });
+});
+</script>

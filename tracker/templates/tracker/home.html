@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Expense Tracker Dashboard</h1>
+            
+            {% include 'tracker/partials/_stats_cards.html' %}
+
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    {% include 'tracker/partials/_filter_form.html' %}
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    {% include 'tracker/partials/_expense_form.html' %}
+                </div>
+                <div class="col-md-6">
+                    {% include 'tracker/partials/_charts.html' %}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    {% include 'tracker/partials/_expense_list.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}{% endblock %}
