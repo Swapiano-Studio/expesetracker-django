@@ -13,9 +13,8 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-env_file = ".env.development" if os.getenv('DEBUG', 'True').lower() in ('true', '1') else ".env.production"
+env_file = ".env.development" if os.getenv('DEBUG', 'True').lower() in ('true', '1') else "/etc/secrets/.env.production"
 load_dotenv(env_file)
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
