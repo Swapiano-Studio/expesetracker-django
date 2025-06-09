@@ -3,7 +3,6 @@
 
 A web-based **Expense Tracker** application built with Django. This tool helps users manage personal finances by tracking expenses, categorizing them, and visualizing spending patterns via interactive charts.
 
----
 
 ## 📌 Features
 
@@ -14,7 +13,6 @@ A web-based **Expense Tracker** application built with Django. This tool helps u
 - 📱 Responsive Design for Mobile & Desktop  
 - 🧩 Clean, Modular Architecture with Service Layer
 
----
 
 ## 🛠️ Tech Stack
 
@@ -23,7 +21,7 @@ A web-based **Expense Tracker** application built with Django. This tool helps u
 - **Database**: SQLite (default, can be replaced with PostgreSQL/MySQL)  
 - **Environment**: Virtualenv, Django Admin
 
----
+````
 
 ## 🚀 Installation Guide
 
@@ -31,7 +29,8 @@ A web-based **Expense Tracker** application built with Django. This tool helps u
    ```bash
    git clone <repository-url>
    cd expensetracker
-````
+   ```
+
 
 2. **Create & Activate Virtual Environment**
 
@@ -68,7 +67,6 @@ A web-based **Expense Tracker** application built with Django. This tool helps u
    Open your browser and navigate to:
    [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
----
 
 ## 🧪 Running Tests
 
@@ -84,7 +82,6 @@ Tests include coverage for:
 * Forms validation
 * Service layer functionality
 
----
 
 ## 📁 Project Structure
 
