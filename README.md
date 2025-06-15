@@ -13,21 +13,21 @@ A web-based **Expense Tracker** application built with Django. This tool helps u
 - 📱 Responsive Design for Mobile & Desktop  
 - 🧩 Clean, Modular Architecture with Service Layer
 
+````
 
 ## 🛠️ Tech Stack
 
 - **Backend**: Python 3.x, Django  
 - **Frontend**: HTML, CSS, JavaScript, Chart.js  
-- **Database**: SQLite (default, can be replaced with PostgreSQL/MySQL)  
+- **Database**: PostgreeSQL  
 - **Environment**: Virtualenv, Django Admin
 
-````
 
 ## 🚀 Installation Guide
 
 1. **Clone the Repository**
    ```bash
-   git clone <repository-url>
+   git clone (https://github.com/Swapiano-Studio/expesetracker-django)
    cd expensetracker
    ```
 
@@ -121,12 +121,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 👤 Author
 
-Made with ❤️ by \[Your Name or Team Name]
+Made with ❤️ by NovaHerawan
 Feel free to reach out or connect for collaboration or feedback.
 
-```
 
----
-
-Jika Anda ingin, saya bisa menyertakan badge status build, coverage, atau deployment status untuk integrasi dengan GitHub Actions atau layanan lain.
-```
